@@ -35,6 +35,10 @@ $(document).on('click', '.gnb_link', function(e) {
     e.preventDefault();//a태그 방지, //siblings  형제, 자매
 	$('.gnb_link').removeClass('active')
 	$(this).addClass('active');
+});
+
+$('#main_site').click(function(){
+    $('.header .link_list').toggle();
 });//
 
 
