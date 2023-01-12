@@ -1,0 +1,12 @@
+//모든 사스 파일이 모이는 곳
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/typo';
+@import './base/reset';
+@import './base/preset';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './page/main';

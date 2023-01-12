@@ -1,0 +1,101 @@
+{
+    "items":[
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"HAPPY 묘 YEAR!!",
+            "desc":"새해 특별 7종 쿠폰팩 증정<br>15만원 이상, 흑토끼 슬리퍼 2종 세트증정",
+            "thumb":"./assets/images/mainbanner01.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"행운의 포춘토끼를 뽑아라!",
+            "desc":"매일매일! 꽝없는 100% 당첨 혜택!<br>기프트카드/뷰티포인트/본품 당첨혜택",
+            "thumb":"./assets/images/mainbanner02.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"BLACK RABBIT",
+            "desc":"김다예작가 콜라보 에디션 페이퍼참!<br>쇼핑백 구매시 귀여운 스티커 드려요!",
+            "thumb":"./assets/images/mainbanner03.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"강력한 보습의 첫 길!",
+            "desc":"압도적 보습력 ALL NEW 크림스킨<br>스탠드 미러 트레이 / 파우치 증정",
+            "thumb":"./assets/images/mainbanner04.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"헤라 누드 밤&글로스 출시",
+            "desc":"NEW 미니립 2종 + 누드핑크 파우치 증정<br>2개이상 구매시, 추가 샘플픽까지",
+            "thumb":"./assets/images/mainbanner05.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"한율 오복 컬렉션 런칭",
+            "desc":"도래매듭창+랜덤키트+기프트카드<br>스탠드 미러 트레이<br>100만원 상당 행운권 당첨 기회까지!",
+            "thumb":"./assets/images/mainbanner06.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"HAPPY 묘 YEAR!!",
+            "desc":"새해 특별 7종 쿠폰팩 증정<br>15만원 이상, 흑토끼 슬리퍼 2종 세트증정",
+            "thumb":"./assets/images/mainbanner01.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"행운의 포춘토끼를 뽑아라!",
+            "desc":"매일매일! 꽝없는 100% 당첨 혜택!<br>기프트카드/뷰티포인트/본품 당첨혜택",
+            "thumb":"./assets/images/mainbanner02.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"BLACK RABBIT",
+            "desc":"김다예작가 콜라보 에디션 페이퍼참!<br>쇼핑백 구매시 귀여운 스티커 드려요!",
+            "thumb":"./assets/images/mainbanner03.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"강력한 보습의 첫 길!",
+            "desc":"압도적 보습력 ALL NEW 크림스킨<br>스탠드 미러 트레이 / 파우치 증정",
+            "thumb":"./assets/images/mainbanner04.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"헤라 누드 밤&글로스 출시",
+            "desc":"NEW 미니립 2종 + 누드핑크 파우치 증정<br>2개이상 구매시, 추가 샘플픽까지",
+            "thumb":"./assets/images/mainbanner05.jpg"
+
+        },
+        {
+            "id":0,
+            "cate":"MD's Choice",
+            "title":"한율 오복 컬렉션 런칭",
+            "desc":"도래매듭창+랜덤키트+기프트카드<br>스탠드 미러 트레이<br>100만원 상당 행운권 당첨 기회까지!",
+            "thumb":"./assets/images/mainbanner06.jpg"
+
+        }
+        
+    ]
+}

@@ -1,0 +1,414 @@
+{
+    "items":[
+        {
+            "id":0,
+            "thumb": "./assets/images/recom01.png",
+            "saleThumb":"./assets/images/sale_first_01.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품"
+            ],
+            "cate1":0,
+            "cate2":2,
+            "cate3":2,
+            "sale1":0
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom02.png",
+            "saleThumb":"./assets/images/sale_first_02.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":85000
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                
+            ],
+            "cate1":0,
+            "cate2":2,
+            "cate3":1,
+            "sale1":1
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom03.jpg",
+            "saleThumb":"./assets/images/sale_first_03.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "기프트카드"
+            ],
+            "cate1":3,
+            "cate2":1,
+            "cate3":0,
+            "sale1":2
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom04.png",
+            "saleThumb":"./assets/images/sale_first_04.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":85000
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate1":0,
+            "cate2":0,
+            "cate3":2,
+            "sale1":0
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom05.jpg",
+            "saleThumb":"./assets/images/sale_first_05.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":76500,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+
+            ],
+            "cate1":0,
+            "cate2":0,
+            "cate3":1,
+            "sale1":4
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom06.png",
+            "saleThumb":"./assets/images/sale_first_06.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate1":4,
+            "cate2":2,
+            "cate3":0,
+            "sale1":0
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom07.png",
+            "saleThumb":"./assets/images/sale_first_01.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":90000,
+                "curr":90000
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품"
+            ],
+            "cate1":0,
+            "cate2":0,
+            "cate3":2,
+            "sale1":2
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom08.png",
+            "saleThumb":"./assets/images/sale_first_02.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate1":0,
+            "cate2":5,
+            "cate3":1,
+            "sale1":1
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom09.png",
+            "saleThumb":"./assets/images/sale_first_03.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":85000
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "기프트카드"
+            ],
+            "cate1":0,
+            "cate2":0,
+            "cate3":0,
+            "sale1":1
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom10.png",
+            "saleThumb":"./assets/images/sale_first_04.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":76500,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate1":1,
+            "cate2":0,
+            "cate3":2,
+            "sale1":4
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom01.png",
+            "saleThumb":"./assets/images/sale_first_05.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+
+            ],
+            "cate1":4,
+            "cate2":3,
+            "cate3":1,
+            "sale1":0
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom02.png",
+            "saleThumb":"./assets/images/sale_first_06.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":85000
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품"
+            ],
+            "cate1":1,
+            "cate2":2,
+            "cate3":0,
+            "sale1":5
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom03.jpg",
+            "saleThumb":"./assets/images/sale_first_07.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate1":2,
+            "cate2":2,
+            "cate3":0,
+            "sale1":5
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom04.png",
+            "saleThumb":"./assets/images/sale_first_05.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "기프트카드"
+            ],
+            "cate1":2,
+            "cate2":3,
+            "cate3":1,
+            "sale1":3
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom10.png",
+            "saleThumb":"./assets/images/sale_first_04.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":76500,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate3":1
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom01.png",
+            "saleThumb":"./assets/images/sale_first_05.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+
+            ],
+            "cate3":0
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom02.png",
+            "saleThumb":"./assets/images/sale_first_06.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":85000
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품"
+            ],
+            "cate3":0
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom03.jpg",
+            "saleThumb":"./assets/images/sale_first_07.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "사은품",
+                "기프트카드"
+            ],
+            "cate3":1
+        },
+        {
+            "id":0,
+            "thumb": "./assets/images/recom04.png",
+            "saleThumb":"./assets/images/sale_first_05.png",
+            "brand":"한율",
+            "name":"백화고 앰플 에센스 40ml",
+            
+            "price":{
+                "ori":85000,
+                "curr":76500
+            },
+            "rate": "4.8",
+            "review":"(6)",
+            "hashtag": "#유수분 밸런스",
+            "benefit":[
+                "기프트카드"
+            ],
+            "cate3":0
+        }
+    ]
+}
