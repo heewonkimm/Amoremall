@@ -32,7 +32,7 @@ fetch("./assets/data/menuData.json")
 
 //gnb active 클래스 부여
 $(document).on('click', '.gnb_link', function(e) {
-    e.preventDefault();//a태그 방지, //siblings  형제, 자매
+    e.preventDefault();
 	$('.gnb_link').removeClass('active')
 	$(this).addClass('active');
 });
@@ -73,12 +73,12 @@ fetch("./assets/data/mainBannerData.json")
 
     //swiper
     const swiper2 = new Swiper("#banner_swiper", {
-        slidesPerView: 'auto', //width 세팅 안했을시! 보여지는 개수
+        slidesPerView: 'auto',
         spaceBetween: 5,
         loop: true,
-        autoplay: {//오토플레이 옵션!
-            delay: 2500, //재생 간격
-            disableOnInteraction: false, //마우스 클릭하면 슬라이드가 멈출것인가
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
         centeredSlides: true,
 
@@ -107,7 +107,7 @@ $('#allBanner').click(function(){
     $('.sc_popup01 .popup_bg').show();
     $('.sc_popup01 .popup_inner').addClass('on');
     
-    fetch("./assets/data/mainBannerData.json")//새로운 데이터를 만드는게 아니라 위에 미리 만들어진 메인배너 데이터 한번 더 사용
+    fetch("./assets/data/mainBannerData.json")
     .then((response) => response.json())
     .then((json) => {
         data = json.items;
@@ -216,12 +216,12 @@ $('#trouble').click(function(){
 
 $('#pop_skin li').click(function(){
     $(this).addClass('active').siblings().removeClass('active');
-    $('#skinType').text($(this).text());// #skinType의 텍스트를 내가 선택한 this의 텍스트로 바꾸어라
+    $('#skinType').text($(this).text());
     $('.popup_bg').hide();
     $('.popup_inner').removeClass('on');
 
     cate1 = $('#pop_skin .active').data('cate1');
-    cate2 = $('#pop_skin .active').data('cate2');//-----a태그 쓸대 function(e), e.preventDefault(); 이렇게 써줘야 새로고침 안됨
+    cate2 = $('#pop_skin .active').data('cate2');
 
     sortData(cate1,cate2);
 });
@@ -237,13 +237,13 @@ $('#pop_trouble li').click(function(){
     sortData(cate1,cate2);
 });
 
+//첫 페이지에 보여줄 데이터
 function sortFirst(a,b){
-    sortData(a,b)//복합성에, 트러블 데이터를 첫 페이지에서 보여줄 것이다
+    sortData(a,b)
     $('#pop_skin li').eq(a).addClass('active').siblings().removeClass('active')
     $('#pop_trouble li').eq(b).addClass('active').siblings().removeClass('active')
-    // 2에만 클래스를 주고 나머지 형제는 리무브해라
 }
-sortFirst(0,2);///////적용 안됨
+sortFirst(0,2);
 
 
 function sortData(cate1,cate2 ){
@@ -253,16 +253,10 @@ fetch("./assets/data/prdData.json")
     data = json.items;
 
     const result = data.filter(function (parm) {return parm.cate1 == cate1 || parm.cate2 == cate2});
-    //데이터를 필터링 해서 호출: cate1이 0인 데이터만 나와라 
-    // ||:또는 이라는 뜻///두가지 타입 모두 충족하게 하고 싶으면 엔드 쓰면 됨
-
-    // console.log(result)
 
     let html = '';
     result.forEach(element => {
 
-        //할인가가 없어서 판매가가 존재하는 경우를 위한 조건문
-        //== 두개는 숫자와 문자 일치, === 세개는 데이터 타입까지 완벽한 일치
         saleEl = (element.price.ori === element.price.curr) ? 'hide':'';
 
         html+=`
@@ -304,8 +298,8 @@ fetch("./assets/data/prdData.json")
 });
 }//
 
-//함수---자바스크립트 천의 자리 벨로그
-// 천단위컴마(정규식);;;;3자리수 마다 ,를 나타내라
+
+// 천단위 콤마(정규식)
 function price(p) {
     return p.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
@@ -500,7 +494,7 @@ fetch("./assets/data/prdData.json")
     result3.forEach(element => {
 
         benefitHtml = '';
-        element.benefit.forEach(benefitEl => {   //json파일에서 benefit '사은품','기프트 카드'는 배열 안에 또 배열로 작성되어 있음- 배열 안의 배열을 사용하기 위한 포이치문
+        element.benefit.forEach(benefitEl => { 
             benefitHtml+=`<span>${benefitEl}</span>`;
         });
 
