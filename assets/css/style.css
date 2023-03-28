@@ -157,7 +157,6 @@ button {
   right: auto;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 640px;
   height: auto;
   max-height: calc(100% - 115px);
   background-color: #fff;
