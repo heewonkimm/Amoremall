@@ -542,6 +542,9 @@ button {
   height: 49px;
   padding: 0 20px;
 }
+.gnb_inner .gnb_list {
+  justify-content: space-between;
+}
 .gnb_inner .gnb_item {
   padding: 0 10px;
   width: auto;

@@ -1,44 +1,44 @@
-$(function(){
+$(function () {
     //gnb 영역
     fetch("./assets/data/menuData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+        .then((response) => response.json())
+        .then((json) => {
+            data = json.items;
 
-        let html = '';
-        let idx = 0;
-        data.forEach(element => {
+            let html = '';
+            let idx = 0;
+            data.forEach(element => {
 
-            pointEl = '<span class="dot"></span>';
-            isEvent = (element.point) ? pointEl : '';
-            isActive = (idx === 0) ? 'active' : '';
-            html+=`
+                pointEl = '<span class="dot"></span>';
+                isEvent = (element.point) ? pointEl : '';
+                isActive = (idx === 0) ? 'active' : '';
+                html += `
                     <li class="gnb_item swiper-slide">
                         <a href="#none" class="gnb_link ${isActive}">${element.title}${isEvent}</a>
                     </li>`;
-            
-            idx++;
-        });
 
-        $('#menuData').html(html);
+                idx++;
+            });
 
-        //swiper
-        const swiper1 = new Swiper("#gnb-swiper", {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            autoplay: false,
-        });
+            $('#menuData').html(html);
 
-    });//
+            //swiper
+            const swiper1 = new Swiper("#gnb-swiper", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                autoplay: false,
+            });
+
+        });//
 
     //gnb active 클래스 부여
-    $(document).on('click', '.gnb_link', function(e) {
+    $(document).on('click', '.gnb_link', function (e) {
         e.preventDefault();
         $('.gnb_link').removeClass('active')
         $(this).addClass('active');
     });
 
-    $('#main_site').click(function(){
+    $('#main_site').click(function () {
         $('.header .link_list').toggle();
     });//
 
@@ -46,15 +46,15 @@ $(function(){
 
     //mainbanner 영역
     fetch("./assets/data/mainBannerData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+        .then((response) => response.json())
+        .then((json) => {
+            data = json.items;
 
-        let html = '';
+            let html = '';
 
-        data.forEach(element => {
+            data.forEach(element => {
 
-            html+=`
+                html += `
                     <div class="swiper-slide">
                         <a href="#none">
                             <div class="text_area">
@@ -67,57 +67,57 @@ $(function(){
                             </div>
                         </a>
                     </div>`;
-            
-        });
 
-        $('#bannerData1').html(html);
+            });
 
-        //swiper
-        const swiper2 = new Swiper("#banner_swiper", {
-            slidesPerView: 'auto',
-            spaceBetween: 5,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            centeredSlides: true,
+            $('#bannerData1').html(html);
 
-            // pagination
-            pagination: {
-                el: ".page_area",
-                type: "custom",
-                renderCustom:function(swiper, current, total){
+            //swiper
+            const swiper2 = new Swiper("#banner_swiper", {
+                slidesPerView: 'auto',
+                spaceBetween: 5,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                centeredSlides: true,
 
-                    currentNum = (current < 10) ? '0'+current : current;
-                    totalNum = (total < 10) ? '0'+total : total;
+                // pagination
+                pagination: {
+                    el: ".page_area",
+                    type: "custom",
+                    renderCustom: function (swiper, current, total) {
 
-                    return `<span class="page_current">${currentNum}</span> 
+                        currentNum = (current < 10) ? '0' + current : current;
+                        totalNum = (total < 10) ? '0' + total : total;
+
+                        return `<span class="page_current">${currentNum}</span> 
                             <span class="page_total">${totalNum}</span>`;
-                }
-            },
+                    }
+                },
 
-        });
+            });
 
-    });//
+        });//
 
 
 
     //mainbanner 전체 보기 영역
-    $('#allBanner').click(function(){
+    $('#allBanner').click(function () {
         $('.sc_popup01 .popup_bg').show();
         $('.sc_popup01 .popup_inner').addClass('on');
-        
+
         fetch("./assets/data/mainBannerData.json")
-        .then((response) => response.json())
-        .then((json) => {
-            data = json.items;
+            .then((response) => response.json())
+            .then((json) => {
+                data = json.items;
 
-            let html = '';
+                let html = '';
 
-            data.forEach(element => {
+                data.forEach(element => {
 
-                html+=`
+                    html += `
                         <li class="cont_item">
                             <a href="#none" class="cont_link">
                                 <div class="thumb"><img src="${element.thumb}" alt=""></div>
@@ -128,17 +128,17 @@ $(function(){
                                 </div>
                             </a>
                         </li>`;
-                
+
+                });
+
+                $('#allbannerData').html(html);
+
             });
-
-            $('#allbannerData').html(html);
-
-        });
 
     });//
 
     //공통 팝업 닫기 버튼
-    $('.close_btn').click(function(){
+    $('.close_btn').click(function () {
         $('.popup_bg').hide();
         $('.popup_inner').removeClass('on');
     });//
@@ -147,17 +147,17 @@ $(function(){
 
     //quickbanner 영역
     fetch("./assets/data/quickBannerData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+        .then((response) => response.json())
+        .then((json) => {
+            data = json.items;
 
-        let html = '';
-        data.forEach(element => {
+            let html = '';
+            data.forEach(element => {
 
-            pointEl = 'hot';
+                pointEl = 'hot';
 
-            isEvent = (element.point) ? pointEl : '';
-            html+=`
+                isEvent = (element.point) ? pointEl : '';
+                html += `
                     <div class="swiper-slide">
                         <a href="#none" class="quick_link">
                             <div class="thumb_area ${isEvent}">
@@ -166,30 +166,30 @@ $(function(){
                             <span class="text_area">${element.name}</span>
                         </a>
                     </div>`;
-            
-        });
 
-        $('#quickBannerData').html(html);
+            });
 
-        //swiper
-        const swiper3 = new Swiper("#quickbanner-swiper", {
-        slidesPerView: 'auto',
-        autoplay: false,
-    });
+            $('#quickBannerData').html(html);
 
-    });//
+            //swiper
+            const swiper3 = new Swiper("#quickbanner-swiper", {
+                slidesPerView: 'auto',
+                autoplay: false,
+            });
+
+        });//
 
 
 
     //recom 영역
     //recom 피부타입 팝업
-    $('#skinType').click(function(){
+    $('#skinType').click(function () {
         $('.sc_popup02 .popup_bg').show();
         $('.sc_popup02 .popup_inner').addClass('on');
     });
 
     //recom 트러블 팝업
-    $('#trouble').click(function(){
+    $('#trouble').click(function () {
         $('.sc_popup03 .popup_bg').show();
         $('.sc_popup03 .popup_inner').addClass('on');
     });
@@ -215,7 +215,7 @@ $(function(){
      * 7 모공
      */
 
-    $('#pop_skin li').click(function(){
+    $('#pop_skin li').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $('#skinType').text($(this).text());
         $('.popup_bg').hide();
@@ -224,10 +224,10 @@ $(function(){
         cate1 = $('#pop_skin .active').data('cate1');
         cate2 = $('#pop_skin .active').data('cate2');
 
-        sortData(cate1,cate2);
+        sortData(cate1, cate2);
     });
 
-    $('#pop_trouble li').click(function(){
+    $('#pop_trouble li').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $('#trouble').text($(this).text());
         $('.popup_bg').hide();
@@ -235,32 +235,32 @@ $(function(){
 
         cate1 = $('#pop_trouble .active').data('cate1');
         cate2 = $('#pop_trouble .active').data('cate2');
-        sortData(cate1,cate2);
+        sortData(cate1, cate2);
     });
 
     //첫 페이지에 보여줄 데이터
-    function sortFirst(a,b){
-        sortData(a,b)
+    function sortFirst(a, b) {
+        sortData(a, b)
         $('#pop_skin li').eq(a).addClass('active').siblings().removeClass('active')
         $('#pop_trouble li').eq(b).addClass('active').siblings().removeClass('active')
     }
-    sortFirst(0,2);
+    sortFirst(0, 2);
 
 
-    function sortData(cate1,cate2 ){
-    fetch("./assets/data/prdData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+    function sortData(cate1, cate2) {
+        fetch("./assets/data/prdData.json")
+            .then((response) => response.json())
+            .then((json) => {
+                data = json.items;
 
-        const result = data.filter(function (parm) {return parm.cate1 == cate1 || parm.cate2 == cate2});
+                const result = data.filter(function (parm) { return parm.cate1 == cate1 || parm.cate2 == cate2 });
 
-        let html = '';
-        result.forEach(element => {
+                let html = '';
+                result.forEach(element => {
 
-            saleEl = (element.price.ori === element.price.curr) ? 'hide':'';
+                    saleEl = (element.price.ori === element.price.curr) ? 'hide' : '';
 
-            html+=`
+                    html += `
                     <div class="swiper-slide">
                     <div class="product_inner">
                         <a href="#none">
@@ -274,7 +274,7 @@ $(function(){
                                 </div>
                                 <div class="pro_price">
                                     <span class="delPrice ${saleEl}">${price(element.price.ori)}</span>
-                                    <em class="discountRate ${saleEl}">${salepercent(element.price.ori,element.price.curr)}%</em>
+                                    <em class="discountRate ${saleEl}">${salepercent(element.price.ori, element.price.curr)}%</em>
                                     <span class="price"><strong class="size_16">${price(element.price.curr)}</strong>원</span>
                                 </div>
                                 <div class="pro_hashtag">
@@ -285,18 +285,18 @@ $(function(){
                         <button class="pro_like"><span class="blind">좋아요</span></button>
                     </div>
                 </div>`;
-            
-        });
-        $('#sortData').html(html);
 
-        //swiper
-        const swiper4 = new Swiper("#recom-swiper", {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
-            autoplay: false,
-    });
+                });
+                $('#sortData').html(html);
 
-    });
+                //swiper
+                const swiper4 = new Swiper("#recom-swiper", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 0,
+                    autoplay: false,
+                });
+
+            });
     }//
 
 
@@ -305,8 +305,8 @@ $(function(){
         return p.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     }
     //할인율 함수
-    function salepercent(ori,curr){
-        return (ori-curr)/ori*100;
+    function salepercent(ori, curr) {
+        return (ori - curr) / ori * 100;
     }
 
 
@@ -326,22 +326,22 @@ $(function(){
 
     //advice 영역
     fetch("./assets/data/prdData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+        .then((response) => response.json())
+        .then((json) => {
+            data = json.items;
 
-        let html = '';
+            let html = '';
 
-        data.forEach(element => {
+            data.forEach(element => {
 
-            benefitHtml = '';
-            element.benefit.forEach(benefitEl => {
-                benefitHtml+=`<span>${benefitEl}</span>`;
-            });
+                benefitHtml = '';
+                element.benefit.forEach(benefitEl => {
+                    benefitHtml += `<span>${benefitEl}</span>`;
+                });
 
-            saleEl = (element.price.ori === element.price.curr) ? 'hide':'';
+                saleEl = (element.price.ori === element.price.curr) ? 'hide' : '';
 
-            html+=`
+                html += `
                     <div class="swiper-slide">
                         <div class="product_inner">
                             <a href="#none">
@@ -355,7 +355,7 @@ $(function(){
                                     </div>
                                     <div class="pro_price">
                                         <span class="delPrice ${saleEl}">${price(element.price.ori)}</span>
-                                        <em class="discountRate ${saleEl}">${salepercent(element.price.ori,element.price.curr)}%</em>
+                                        <em class="discountRate ${saleEl}">${salepercent(element.price.ori, element.price.curr)}%</em>
                                         <span class="price"><strong class="size_16">${price(element.price.curr)}</strong>원</span>
                                     </div>
                                     <div class="pro_rate">
@@ -370,17 +370,17 @@ $(function(){
                             <button class="pro_like"><span class="blind">좋아요</span></button>
                         </div>
                     </div>`;
-        });
+            });
 
-        $('#adviceData').html(html);
+            $('#adviceData').html(html);
 
-        //swiper
-        const swiper6 = new Swiper("#advice-swiper", {
-            slidesPerView: 'auto',
-            autoplay: false,
-        });
+            //swiper
+            const swiper6 = new Swiper("#advice-swiper", {
+                slidesPerView: 'auto',
+                autoplay: false,
+            });
 
-    });//
+        });//
 
 
 
@@ -388,19 +388,19 @@ $(function(){
     //탭 메뉴
     var tabBtn = $(".sale_btn > div");
     var tabCont = $(".sale_contents > div");
-        
+
     tabCont.hide().eq(0).show();
 
-    tabBtn.click(function(e){
+    tabBtn.click(function (e) {
         e.preventDefault();
         var target = $(this);
         var index = target.index();
 
-        tabCont.css("display","none")
-        tabCont.eq(index).css("display","block")
+        tabCont.css("display", "none")
+        tabCont.eq(index).css("display", "block")
     });
 
-    $('.sale_btn > div').click(function(){
+    $('.sale_btn > div').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
         sale1 = $(this).data('sale1');
         saleData(sale1);
@@ -408,17 +408,17 @@ $(function(){
 
     saleData(0);//첫페이지에 보이도록
 
-    function saleData(sale1){
-    fetch("./assets/data/prdData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+    function saleData(sale1) {
+        fetch("./assets/data/prdData.json")
+            .then((response) => response.json())
+            .then((json) => {
+                data = json.items;
 
-        const result2 = data.filter(function (parm) {return parm.sale1 == sale1});
-        let html = '';
-        result2.forEach(element => {
+                const result2 = data.filter(function (parm) { return parm.sale1 == sale1 });
+                let html = '';
+                result2.forEach(element => {
 
-            html+=`
+                    html += `
                     <div class="swiper-slide">
                         <div class="product_inner">
                             <a href="#none">
@@ -429,28 +429,28 @@ $(function(){
                                         <span class="name">${element.name}</span>
                                     </div>
                                     <div class="pro_price">
-                                        <em class="discountRate">${salepercent(element.price.ori,element.price.curr)}%</em>
+                                        <em class="discountRate">${salepercent(element.price.ori, element.price.curr)}%</em>
                                         <span class="price"><strong class="size_16">${element.price.curr}</strong>원</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>`;
-        });
+                });
 
-        $('#saleData1').html(html);
-        $('#saleData2').html(html);
-        $('#saleData3').html(html);
-        $('#saleData4').html(html);
-        $('#saleData5').html(html);
+                $('#saleData1').html(html);
+                $('#saleData2').html(html);
+                $('#saleData3').html(html);
+                $('#saleData4').html(html);
+                $('#saleData5').html(html);
 
-        //swiper
-        const swiper7 = new Swiper(".sale-swiper", {
-            slidesPerView: 'auto',
-            autoplay: false,
-        });
+                //swiper
+                const swiper7 = new Swiper(".sale-swiper", {
+                    slidesPerView: 'auto',
+                    autoplay: false,
+                });
 
-    });
+            });
     }//
 
 
@@ -470,7 +470,7 @@ $(function(){
 
     //best 영역
     //recom 영역에서 사용한 데이터 파일 활용
-    $('#pop_period li').click(function(){
+    $('#pop_period li').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $('.btn_date').text($(this).text());
         $('.popup_bg').hide();
@@ -483,25 +483,25 @@ $(function(){
 
     bestData(0);
 
-    function bestData(cate3){
-    fetch("./assets/data/prdData.json")
-    .then((response) => response.json())
-    .then((json) => {
-        data = json.items;
+    function bestData(cate3) {
+        fetch("./assets/data/prdData.json")
+            .then((response) => response.json())
+            .then((json) => {
+                data = json.items;
 
-        const result3 = data.filter(function (parm) {return parm.cate3 == cate3});
+                const result3 = data.filter(function (parm) { return parm.cate3 == cate3 });
 
-        let html = '';
-        result3.forEach(element => {
+                let html = '';
+                result3.forEach(element => {
 
-            benefitHtml = '';
-            element.benefit.forEach(benefitEl => { 
-                benefitHtml+=`<span>${benefitEl}</span>`;
-            });
+                    benefitHtml = '';
+                    element.benefit.forEach(benefitEl => {
+                        benefitHtml += `<span>${benefitEl}</span>`;
+                    });
 
-            saleEl = (element.price.ori === element.price.curr) ? 'hide':'';
+                    saleEl = (element.price.ori === element.price.curr) ? 'hide' : '';
 
-            html+=`
+                    html += `
                     <div class="swiper-slide">
                         <div class="product_inner">
                             <a href="#none" class="position">
@@ -518,7 +518,7 @@ $(function(){
                                     </div>
                                     <div class="pro_price">
                                         <span class="delPrice ${saleEl}">${price(element.price.ori)}</span>
-                                        <em class="discountRate ${saleEl}">${salepercent(element.price.ori,element.price.curr)}%</em>
+                                        <em class="discountRate ${saleEl}">${salepercent(element.price.ori, element.price.curr)}%</em>
                                         <span class="price"><strong class="size_16">${price(element.price.curr)}</strong>원</span>
                                     </div>
                                     <div class="pro_rate">
@@ -532,15 +532,15 @@ $(function(){
                             </a>
                         </div>
                     </div>`;
-        });
+                });
 
-        $('#bestData').html(html);
+                $('#bestData').html(html);
 
-    });
+            });
     }//
 
     //best 조회기간 팝업
-    $('.btn_date').click(function(){
+    $('.btn_date').click(function () {
         $('.sc_popup04 .popup_bg').show();
         $('.sc_popup04 .popup_inner').addClass('on');
     });
