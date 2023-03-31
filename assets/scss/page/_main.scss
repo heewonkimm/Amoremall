@@ -450,7 +450,7 @@ main.container {
 
     .swiper-slide {
         max-width: 360px;
-        padding: 0 8px 0 0;
+        // padding: 0 8px 0 0;
 
         .thumb_area {
             width: 100%;
@@ -802,7 +802,7 @@ main.container {
     margin-top: 70px;
 
     .swiper-slide {
-        margin-right: 8px;
+        // margin-right: 8px;
         max-width: 335px;
         width: calc(100% - 40px);
     }
@@ -990,8 +990,8 @@ main.container {
     left: auto;
     right: 20px;
     bottom: 77px;
+    max-width: 1024px;
     z-index: 100;
-
     .scroll_btn {
         width: 40px;
         height: 40px;
@@ -1017,6 +1017,7 @@ main.container {
     bottom: 0;
     transform: translateX(-50%);
     display: flex;
+    max-width: 1024px;
     width: 100%;
     height: auto;
     background-color: #fff;

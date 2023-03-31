@@ -18,14 +18,12 @@ html {
 :root {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
+  text-size-adjust: 100%;
   cursor: default;
   line-height: 1.5;
   overflow-wrap: break-word;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 html, body {
@@ -92,6 +90,7 @@ button {
 
 .wrapper {
   width: 100%;
+  max-width: 1024px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -157,6 +156,7 @@ button {
   right: auto;
   transform: translateX(-50%);
   width: 100%;
+  max-width: 1024px;
   height: auto;
   max-height: calc(100% - 115px);
   background-color: #fff;
@@ -1151,7 +1151,6 @@ main.container .contents {
 }
 .sc_new .swiper-slide {
   max-width: 360px;
-  padding: 0 8px 0 0;
 }
 .sc_new .swiper-slide .thumb_area {
   width: 100%;
@@ -1459,7 +1458,6 @@ main.container .contents {
   margin-top: 70px;
 }
 .sc_event .swiper-slide {
-  margin-right: 8px;
   max-width: 335px;
   width: calc(100% - 40px);
 }
@@ -1623,6 +1621,7 @@ main.container .contents {
   left: auto;
   right: 20px;
   bottom: 77px;
+  max-width: 1024px;
   z-index: 100;
 }
 .scrolltop .scroll_btn {
@@ -1647,6 +1646,7 @@ main.container .contents {
   bottom: 0;
   transform: translateX(-50%);
   display: flex;
+  max-width: 1024px;
   width: 100%;
   height: auto;
   background-color: #fff;

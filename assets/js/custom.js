@@ -315,13 +315,13 @@ $(function () {
     const swiper5 = new Swiper("#new-swiper", {
         slidesPerView: 'auto',
         loop: true,
+        spaceBetween: 8,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
         },
         centeredSlides: true,
     });
-
 
 
     //advice 영역
@@ -459,13 +459,13 @@ $(function () {
     const swiper8 = new Swiper("#event-swiper", {
         slidesPerView: 'auto',
         loop: true,
+        spaceBetween: 8,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
         },
         centeredSlides: true,
     });
-
 
 
     //best 영역
