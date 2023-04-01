@@ -38,13 +38,11 @@ button {
     width: 100%;
     padding: 0 20px;
     margin-bottom: 19px;
-
     .title {
         font-size: 22px;
         font-weight: 700;
         color: #000;
         letter-spacing: -.11px;
-
         &::after {
             content: '';
             display: inline-flex;
@@ -55,7 +53,6 @@ button {
             margin-left: 6px;
         }
     }
-
     .sub_txt {
         margin-top: 6px;
 
@@ -68,8 +65,6 @@ button {
     }
 }
 
-
-
 //팝업 공통
 .popup_area {
     position: fixed;
@@ -79,7 +74,6 @@ button {
     height: auto;
     background-color: rgba(0, 0, 0, .5);
     z-index: 400;
-
     .popup_bg {
         position: fixed;
         left: 0;
@@ -90,7 +84,6 @@ button {
         z-index: 150;
         display: none;
     }
-
     .popup_inner {
         display: flex;
         flex-direction: column;
@@ -107,11 +100,9 @@ button {
         border-radius: 8px 8px 0 0;
         transition: all 300ms cubic-bezier(0, 0, .2, 1) 0ms;
         z-index: 400;
-
         &.on {
             bottom: 0;
         }
-
         .head_wrap {
             h2 {
                 font-size: 20px;
@@ -120,14 +111,12 @@ button {
                 line-height: 24px;
             }
         }
-
         .cont_wrap {
             display: block;
             flex: 1 1 auto;
             text-align: left;
             overflow-y: auto;
         }
-
         .handler_btn {
             position: absolute;
             left: 0;
@@ -136,7 +125,6 @@ button {
             height: 25px;
             background-color: #fff;
             border-radius: 8px 8px 0 0;
-
             &::before {
                 content: "";
                 display: block;
@@ -150,7 +138,6 @@ button {
                 border-radius: 3px;
             }
         }
-
         .close_btn {
             @include displayFlexCl;
             position: absolute;
@@ -164,20 +151,16 @@ button {
     }
 }
 
-
-
 //프러덕트 텍스트 공통
 .product_inner {
     position: relative;
     width: 152px;
-
     .pro_thumb_area {
         position: relative;
         height: 152px;
         margin-bottom: 11px;
         border-radius: 8px;
         overflow: hidden;
-
         &::before {
             content: "";
             display: block;
@@ -189,16 +172,13 @@ button {
             background: rgba(0, 0, 0, .03);
         }
     }
-
     .pro_text_area {
         position: relative;
-
         .pro_title {
             max-height: none;
             margin-bottom: 8px;
             @include ellipse(2);
         }
-
         .brand {
             @include ellipse(1);
             display: block;
@@ -207,7 +187,6 @@ button {
             color: #000;
             margin-bottom: 4px;
         }
-
         .name {
             @include ellipse(2);
             max-height: 36px;
@@ -215,11 +194,9 @@ button {
             font-weight: 400;
             color: #666;
         }
-
         .pro_price {
             margin-bottom: 8px;
         }
-
         .delPrice {
             display: block;
             font-size: 12px;
@@ -233,7 +210,6 @@ button {
                 display: none;
             }
         }
-
         .discountRate {
             font-size: 16px;
             font-weight: 700;
@@ -245,24 +221,20 @@ button {
                 display: none;
             }
         }
-
         .price {
             font-size: 15px;
             font-weight: 400;
             color: #1f1f1f;
             margin-left: 4px;
             line-height: 1;
-
             .size_16 {
                 font-size: 16px;
             }
         }
-
         .pro_hashtag {
             display: flex;
             flex-wrap: wrap;
             margin: -3px -2px;
-
             .hashtag_inner {
                 display: inline-block;
                 height: 20px;
@@ -276,11 +248,9 @@ button {
                 border-radius: 2px;
             }
         }
-
         .pro_rate {
             display: flex;
         }
-
         .icon_star {
             display: inline-flex;
             align-items: center;
@@ -288,7 +258,6 @@ button {
             font-weight: 400;
             color: #666;
             line-height: 1;
-
             &::before {
                 content: "";
                 display: inline-block;
@@ -302,11 +271,9 @@ button {
             }
         }
     }
-
     .position {
         position: relative;
     }
-
     .pro_like {
         @include displayFlexCl;
         position: absolute;
@@ -315,7 +282,6 @@ button {
         transform: translateY(-11px);
         width: 44px;
         height: 44px;
-
         &::before {
             content: '';
             display: block;
@@ -324,13 +290,11 @@ button {
             width: 32px;
             height: 32px;
         }
-
         .sc_best & {
             top: 85%;
             right: 2%;
         }
     }
-
     .pro_gift {
         span {
             display: inline-block;
