@@ -320,7 +320,6 @@ $(function () {
             delay: 2500,
             disableOnInteraction: false,
         },
-        centeredSlides: true,
     });
 
 
@@ -464,7 +463,6 @@ $(function () {
             delay: 2500,
             disableOnInteraction: false,
         },
-        centeredSlides: true,
     });
 
 

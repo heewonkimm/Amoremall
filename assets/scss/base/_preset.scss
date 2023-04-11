@@ -25,7 +25,6 @@ button {
 
 .wrapper {
     width: 100%;
-    max-width: 1024px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -93,7 +92,6 @@ button {
         right: auto;
         transform: translateX(-50%);
         width: 100%;
-        max-width: 1024px;
         height: auto;
         max-height: calc(100% - 115px);
         background-color: #fff;

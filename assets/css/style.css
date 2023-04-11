@@ -92,7 +92,6 @@ button {
 
 .wrapper {
   width: 100%;
-  max-width: 1024px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -158,7 +157,6 @@ button {
   right: auto;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1024px;
   height: auto;
   max-height: calc(100% - 115px);
   background-color: #fff;
@@ -1623,7 +1621,6 @@ main.container .contents {
   left: auto;
   right: 20px;
   bottom: 77px;
-  max-width: 1024px;
   z-index: 100;
 }
 .scrolltop .scroll_btn {
@@ -1648,7 +1645,6 @@ main.container .contents {
   bottom: 0;
   transform: translateX(-50%);
   display: flex;
-  max-width: 1024px;
   width: 100%;
   height: auto;
   background-color: #fff;
